@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.invite.json
+*.pem
+*.key
+*.pfx
+*.p12
+.claude/
+dist/
+
+# Local execution artifacts must not enter public packages.
+private/
+*.log
+*.bundle
+.gitleaks-report*
+_site/

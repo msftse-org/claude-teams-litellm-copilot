@@ -1,0 +1,24 @@
+ADMINISTRATOR: send this message yourself through an approved private channel.
+Replace the bracketed placeholders. Do not paste API keys into this message.
+Share the personal invitation only with its intended developer.
+
+Hello [developer name],
+
+Your Claude Gateway setup is ready.
+
+CLI package: [approved package download link]
+Your private invitation: [recipient-restricted link, or attach their .invite.json]
+Expected GitHub username: [username]
+Claude organization to select: [organization]
+Support: [team/contact]
+
+1. Download and unzip the CLI package. Open START-HERE.html for the guide.
+2. Open the extracted claude-gateway-cli folder in Terminal or iTerm.
+3. Run ./setup developer and choose Join with my invitation.
+4. Paste or drag your private invitation file into Terminal.
+5. Complete your account sign-ins and wait for the checks to pass.
+6. Restart existing Claude sessions, then run claude normally.
+
+Your work email is recorded in LiteLLM for identification. The setup tool has
+not sent an email or verified your mailbox. This message is the manual handoff.
+Your invitation contains a personal access key; do not forward or publish it.

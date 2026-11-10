@@ -1,0 +1,21 @@
+name: Package checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Test onboarding and wrapper
+        run: python3 -m unittest discover -s tests
+      - name: Rebuild guide from repository sources
+        run: python3 tools/build_guide.py
+      - name: Check package and generated guide
+        run: python3 tools/check_package.py
+      - name: Check public distribution content
+        run: python3 tools/check_public.py
+      - name: Ensure generated files are current
+        run: git diff --exit-code -- START-HERE.html tools/guide-commands.json

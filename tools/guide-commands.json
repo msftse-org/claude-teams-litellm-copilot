@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cmd-0",
+    "command": "python3 --version",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-1",
+    "command": "./setup admin",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-2",
+    "command": "python3 --version",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-3",
+    "command": "claude --version",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-4",
+    "command": "./setup developer",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-5",
+    "command": "claude",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-6",
+    "command": "./setup doctor",
+    "context": "Terminal"
+  },
+  {
+    "id": "cmd-7",
+    "command": "./setup models",
+    "context": "Terminal"
+  }
+]

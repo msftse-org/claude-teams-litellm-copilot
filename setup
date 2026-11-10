@@ -1,0 +1,11 @@
+#!/bin/sh
+# Human-facing entry point. The Python implementation lives in _engine.
+set -eu
+setup_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+for setup_python in "$(command -v python3 2>/dev/null || true)" /opt/homebrew/bin/python3 /usr/local/bin/python3 /usr/bin/python3; do
+  if [ -n "$setup_python" ] && [ -x "$setup_python" ] && "$setup_python" -c 'import sys; assert sys.version_info >= (3, 10)' >/dev/null 2>&1; then
+    exec "$setup_python" "$setup_dir/_engine/cli.py" "$@"
+  fi
+done
+printf '\nClaude Gateway Setup requires Python 3.10 or newer.\nAsk your administrator to provide it, then run ./setup again.\n' >&2
+exit 1

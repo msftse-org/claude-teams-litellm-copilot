@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-11-10",
+  "automated_tests": 17,
+  "compatibility": {
+    "litellm": "1.108.0",
+    "claude_code": "2.1.317",
+    "platform": "macOS",
+    "python_minimum": "3.10"
+  },
+  "results": {
+    "primary_models": 3,
+    "direct_copilot_models": 4,
+    "read_tool_routes": 3,
+    "genuine_fallback_routes": 3,
+    "admin_invitation": "passed",
+    "developer_onboarding": "passed",
+    "settings_restore": "passed",
+    "no_automatic_email": "passed"
+  },
+  "scope": [
+    "Live provider results summarize previous acceptance checks; raw telemetry is not distributed.",
+    "First-time browser consent and customer-specific network and managed policies require deployment verification.",
+    "Read-tool success does not certify native WebSearch or every tool.",
+    "Optional Copilot Opus and uninterrupted partial-stream failover were not verified."
+  ]
+}

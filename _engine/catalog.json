@@ -1,0 +1,185 @@
+{
+  "credential": "github-copilot-user",
+  "models": [
+    {
+      "model_name": "anthropic/*",
+      "litellm_params": {
+        "model": "anthropic/*",
+        "max_retries": 0
+      },
+      "model_info": {
+        "cooldown_time": 0
+      }
+    },
+    {
+      "model_name": "claude-copilot-sonnet",
+      "litellm_params": {
+        "model": "github_copilot/claude-sonnet-5.5",
+        "litellm_credential_name": "github-copilot-user",
+        "github_copilot_auth_type": "per_user_oauth",
+        "max_retries": 0
+      },
+      "model_info": {
+        "cooldown_time": 0
+      }
+    },
+    {
+      "model_name": "claude-copilot-haiku",
+      "litellm_params": {
+        "model": "github_copilot/claude-haiku-5.5",
+        "litellm_credential_name": "github-copilot-user",
+        "github_copilot_auth_type": "per_user_oauth",
+        "max_retries": 0
+      },
+      "model_info": {
+        "cooldown_time": 0
+      }
+    },
+    {
+      "model_name": "claude-copilot-opus",
+      "litellm_params": {
+        "model": "github_copilot/claude-opus-5.5",
+        "litellm_credential_name": "github-copilot-user",
+        "github_copilot_auth_type": "per_user_oauth",
+        "max_retries": 0
+      },
+      "model_info": {
+        "cooldown_time": 0
+      }
+    },
+    {
+      "model_name": "claude-copilot-sonnet-5",
+      "litellm_params": {
+        "model": "github_copilot/claude-sonnet-5",
+        "litellm_credential_name": "github-copilot-user",
+        "github_copilot_auth_type": "per_user_oauth",
+        "max_retries": 0
+      },
+      "model_info": {
+        "cooldown_time": 0
+      }
+    },
+    {
+      "model_name": "claude-copilot-haiku-4-5",
+      "litellm_params": {
+        "model": "github_copilot/claude-haiku-4.5",
+        "litellm_credential_name": "github-copilot-user",
+        "github_copilot_auth_type": "per_user_oauth",
+        "max_retries": 0
+      },
+      "model_info": {
+        "cooldown_time": 0
+      }
+    }
+  ],
+  "fallbacks": [
+    {
+      "claude-sonnet-5-5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "anthropic/claude-sonnet-5-5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "claude-sonnet-5.5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "anthropic/claude-sonnet-5.5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "claude-haiku-5-5": [
+        "claude-copilot-haiku"
+      ]
+    },
+    {
+      "anthropic/claude-haiku-5-5": [
+        "claude-copilot-haiku"
+      ]
+    },
+    {
+      "claude-haiku-5.5": [
+        "claude-copilot-haiku"
+      ]
+    },
+    {
+      "anthropic/claude-haiku-5.5": [
+        "claude-copilot-haiku"
+      ]
+    },
+    {
+      "claude-opus-5-5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "anthropic/claude-opus-5-5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "claude-opus-5.5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "anthropic/claude-opus-5.5": [
+        "claude-copilot-sonnet"
+      ]
+    },
+    {
+      "claude-sonnet-5": [
+        "claude-copilot-sonnet-5"
+      ]
+    },
+    {
+      "anthropic/claude-sonnet-5": [
+        "claude-copilot-sonnet-5"
+      ]
+    },
+    {
+      "claude-haiku-4-5": [
+        "claude-copilot-haiku-4-5"
+      ]
+    },
+    {
+      "anthropic/claude-haiku-4-5": [
+        "claude-copilot-haiku-4-5"
+      ]
+    },
+    {
+      "claude-haiku-4.5": [
+        "claude-copilot-haiku-4-5"
+      ]
+    },
+    {
+      "anthropic/claude-haiku-4.5": [
+        "claude-copilot-haiku-4-5"
+      ]
+    },
+    {
+      "claude-copilot-sonnet": []
+    },
+    {
+      "claude-copilot-haiku": []
+    },
+    {
+      "claude-copilot-opus": []
+    },
+    {
+      "claude-copilot-sonnet-5": []
+    },
+    {
+      "claude-copilot-haiku-4-5": []
+    }
+  ],
+  "optional_models": [
+    "claude-copilot-opus"
+  ]
+}
